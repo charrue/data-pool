@@ -8,6 +8,8 @@
   "plugins": ["@typescript-eslint"],
   "rules": {
     "no-console": "off",
+    "init-declarations": "off",
+    "no-param-reassign": "off",
     "@typescript-eslint/indent": ["error", 2],
     "@typescript-eslint/no-unused-vars": "error",
     "@typescript-eslint/no-explicit-any": "off",

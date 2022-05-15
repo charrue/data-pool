@@ -22,9 +22,6 @@ const config = [
     output: {
       file: getOutput("index.cjs.js"),
       format: "cjs",
-      globals: {
-        "vue-demi": "VueDemi",
-      },
     },
     external(id) {
       return /^vue/.test(id);
@@ -36,9 +33,6 @@ const config = [
     output: {
       file: getOutput("index.es.js"),
       format: "es",
-      globals: {
-        "vue-demi": "VueDemi",
-      },
     },
     external(id) {
       return /^vue/.test(id);
@@ -49,13 +43,10 @@ const config = [
     input,
     output: {
       file: getOutput("index.iife.min.js"),
-      name: "CharrueComposable",
+      name: "CharrueDataPool",
       format: "iife",
       extend: true,
 
-      globals: {
-        "vue-demi": "VueDemi",
-      },
     },
     external(id) {
       return /^vue/.test(id);
